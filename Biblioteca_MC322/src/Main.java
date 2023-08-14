@@ -1,9 +1,22 @@
+/* LAB1
+Wanderley Pedroso da Graca Barion RA: 225790
+Yuri Rocha Cunha RA: 250570
+*/
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	//Instanciando objetos
+		Livros livro1 = new Livros("Dom Quixote", "Miguel de Cervantes", 250, 1);
+		Funcionarios funcionario1 = new Funcionarios("Joao Silva", "Bibliotecario", 001, "123.456.789-12");
+		Usuarios usuario1 = new Usuarios("Ana Maria", "Aluno", 00001, "987.654.321-98");
+	
+	// impressao dos objetos
+		System.out.println("Primeiro livro :\n"+livro1);
+		System.out.println("Primeiro funcionário :\n"+funcionario1);
+		System.out.println("Primeiro usuário :\n"+usuario1);
 	}
+	
 
 }
