@@ -11,8 +11,8 @@ public class Periodicos {
 		public Periodicos(String titulo, String autor, int paginas) {
 
 			this.titulo = titulo ;
-			this.autor = autor ; 
-			this.paginas = paginas ;
+			this.autor = autor; 
+			this.paginas = paginas;
 
 		}
 			
