@@ -12,7 +12,7 @@ public class Periodicos {
 
 			this.titulo = titulo ;
 			this.autor = autor ; 
-			this.paginas = paginas;
+			this.paginas = paginas ;
 
 		}
 			
