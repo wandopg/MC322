@@ -1,3 +1,8 @@
+
+import materiais.Livros;
+import membros.Funcionarios;
+import membros.Usuarios;
+
 /* LAB1
 Wanderley Pedroso da Graca Barion RA: 225790
 Yuri Rocha Cunha RA: 250570
@@ -13,9 +18,9 @@ public class Main {
 		Usuarios usuario1 = new Usuarios("Ana Maria", "Aluno", 00001, "987.654.321-98");
 	
 	// impressao dos objetos
-		System.out.println("Primeiro livro :\n"+livro1);
-		System.out.println("Primeiro funcionário :\n"+funcionario1);
-		System.out.println("Primeiro usuário :\n"+usuario1);
+		System.out.println("Primeiro livro:\n"+livro1);
+		System.out.println("Primeiro funcionário:\n"+funcionario1);
+		System.out.println("Primeiro usuário:\n"+usuario1);
 	}
 	
 

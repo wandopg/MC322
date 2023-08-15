@@ -1,7 +1,5 @@
-/* LAB1
-Wanderley Pedroso da Graca Barion RA: 225790
-Yuri Rocha Cunha RA: 250570
-*/
+package materiais;
+
 
 public class Livros {
 

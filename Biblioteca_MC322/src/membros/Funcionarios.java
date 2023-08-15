@@ -1,3 +1,4 @@
+package membros;
 /* LAB1
 Wanderley Pedroso da Graca Barion RA: 225790
 Yuri Rocha Cunha RA: 250570
@@ -20,54 +21,53 @@ public class Funcionarios {
 		this.cpf = cpf;
 
 	}
-	
+
 	// Outros metodos
-		
+
 	public String toString() {
-		String out = "Nome: "+getNome()+"\n";
-		out = out + "Cargo = "+getCargo()+"\n";
-		out = out + "ID = "+getId()+"\n";
-		out = out + "CPF = "+getCpf()+"\n";
+		String out = "Nome: " + getNome() + "\n";
+		out = out + "Cargo = " + getCargo() + "\n";
+		out = out + "ID = " + getId() + "\n";
+		out = out + "CPF = " + getCpf() + "\n";
 		return out;
 	}
-		
-	// Metodos Get and Set 
-			
-		
-	//Nome
+
+	// Metodos Get and Set
+
+	// Nome
 	public String getNome() {
 		return nome;
 	}
-			
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-		
-	//Cargo
-		public String getCargo() {
-			return cargo;
-		}
-				
-		public void setCargo(String cargo) {
-			this.cargo = cargo;
-		}
-		
-	//ID
+
+	// Cargo
+	public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	// ID
 	public int getId() {
 		return id;
 	}
-			
+
 	public void setId(int id) {
 		this.id = id;
 	}
-		
-	//CPF
+
+	// CPF
 	public String getCpf() {
 		return cpf;
 	}
-			
+
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}	
+	}
 
 }
