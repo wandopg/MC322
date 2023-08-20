@@ -21,6 +21,7 @@ public class Main {
 		Usuarios usuario1 = new Usuarios("Ana Maria", "Aluno", 00001, "987.654.321-98");
 		Periodicos pediodico1= new Periodicos ("News14/08", "Jorge Mendes",100);
 	
+		
 	// impressao dos objetos
 		System.out.println("Primeiro livro:\n"+livro1);
 		System.out.println("Priemira Tese:\n"+tese1);
