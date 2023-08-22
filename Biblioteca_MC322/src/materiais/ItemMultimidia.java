@@ -1,20 +1,21 @@
 package materiais;
 
 
-public class Teses {
+public class ItemMultimidia {
 
 	private String titulo;
 	private String autor;
 	private int paginas;
+	private int tombo;
 
 	// Metodo construtor
 
-	public Teses(String titulo, String autor, int paginas) {
+	public ItemMultimidia(String titulo, String autor, int paginas, int tombo) {
 
 		this.titulo = titulo;
 		this.autor = autor;
 		this.paginas = paginas;
-
+		this.tombo = tombo;
 	}
 		
 	// Outros metodos
@@ -23,6 +24,7 @@ public class Teses {
 		String out = "Titulo: "+getTitulo()+"\n";
 		out = out + "Autor = "+getAutor()+"\n";
 		out = out + "Numero de paginas = "+getPaginas()+"\n";
+		out = out + "Tombo = "+getTombo()+"\n";
 		return out;
 	}
 	
@@ -56,5 +58,13 @@ public class Teses {
 		this.paginas = paginas;
 	}
 	
+	//Tombo
+	public int getTombo() {
+		return tombo;
+	}
+		
+	public void setTombo(int tombo) {
+		this.tombo = tombo;
+	}	
 
 }
