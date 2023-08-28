@@ -16,6 +16,7 @@ public class ItemMultimidia {
 		this.autor = autor;
 		this.paginas = paginas;
 		this.tombo = tombo;
+		
 	}
 		
 	// Outros metodos
