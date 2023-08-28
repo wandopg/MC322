@@ -13,12 +13,6 @@ public class ItemMultimidia {
 
 		this.titulo = titulo;
 		this.autor = autor;
-<<<<<<< HEAD
-=======
-		this.paginas = paginas;
-		this.tombo = tombo;
-		
->>>>>>> refs/remotes/origin/master
 	}
 		
 	// Outros metodos

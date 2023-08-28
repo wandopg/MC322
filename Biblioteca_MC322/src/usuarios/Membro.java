@@ -8,17 +8,12 @@ Yuri Rocha Cunha RA: 250570
 
 public class Membro {
 
-<<<<<<< HEAD
+
 	protected String nome;
 	protected String cpf;
-=======
-	private String nome;
-	private String tipo;
-	private int id;
-	private String cpf;
 	private Emprestimo[] emprestimos;
 	private int numEmprestimos;
->>>>>>> refs/remotes/origin/master
+
 
 	// Metodo construtor
 
