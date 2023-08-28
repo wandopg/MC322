@@ -6,18 +6,14 @@ Yuri Rocha Cunha RA: 250570
 
 public class Membro {
 
-	private String nome;
-	private String tipo;
-	private int id;
-	private String cpf;
+	protected String nome;
+	protected String cpf;
 
 	// Metodo construtor
 
-	public Membro(String nome, String tipo, int id, String cpf) {
+	public Membro(String nome, String cpf) {
 
 		this.nome = nome;
-		this.tipo = tipo;
-		this.id = id;
 		this.cpf = cpf;
 	}
 
@@ -25,8 +21,6 @@ public class Membro {
 
 	public String toString() {
 		String out = "Nome: " + getNome() + "\n";
-		out = out + "Tipo = " + getTipo() + "\n";
-		out = out + "ID = " + getId() + "\n";
 		out = out + "CPF = " + getCpf() + "\n";
 		return out;
 	}
@@ -40,24 +34,6 @@ public class Membro {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	// Tipo
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	// ID
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	// CPF

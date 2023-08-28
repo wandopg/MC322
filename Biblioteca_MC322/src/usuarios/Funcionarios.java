@@ -1,24 +1,18 @@
 package usuarios;
-/* LAB1
-Wanderley Pedroso da Graca Barion RA: 225790
-Yuri Rocha Cunha RA: 250570
-*/
 
-public class Funcionarios {
+public class Funcionarios extends Membro {
 
-	private String nome;
 	private String cargo;
 	private int id;
-	private String cpf;
 
 	// Metodo construtor
 
 	public Funcionarios(String nome, String cargo, int id, String cpf) {
 
-		this.nome = nome;
+		super (nome, cpf);
 		this.cargo = cargo;
 		this.id = id;
-		this.cpf = cpf;
+		
 
 	}
 
@@ -33,15 +27,6 @@ public class Funcionarios {
 	}
 
 	// Metodos Get and Set
-
-	// Nome
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 
 	// Cargo
 	public String getCargo() {
@@ -59,15 +44,6 @@ public class Funcionarios {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	// CPF
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
 	}
 
 }

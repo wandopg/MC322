@@ -3,19 +3,16 @@ package materiais;
 
 public class ItemMultimidia {
 
-	private String titulo;
-	private String autor;
-	private int paginas;
-	private int tombo;
+	protected String titulo;
+	protected String autor;
+	
 
 	// Metodo construtor
 
-	public ItemMultimidia(String titulo, String autor, int paginas, int tombo) {
+	public ItemMultimidia(String autor, String titulo) {
 
 		this.titulo = titulo;
 		this.autor = autor;
-		this.paginas = paginas;
-		this.tombo = tombo;
 	}
 		
 	// Outros metodos
@@ -23,8 +20,6 @@ public class ItemMultimidia {
 	public String toString() {
 		String out = "Titulo: "+getTitulo()+"\n";
 		out = out + "Autor = "+getAutor()+"\n";
-		out = out + "Numero de paginas = "+getPaginas()+"\n";
-		out = out + "Tombo = "+getTombo()+"\n";
 		return out;
 	}
 	
@@ -48,23 +43,4 @@ public class ItemMultimidia {
 		public void setAutor(String autor) {
 			this.autor = autor;
 		}
-	
-	//Paginas
-	public int getPaginas() {
-		return paginas;
-	}
-		
-	public void setPaginas(int paginas) {
-		this.paginas = paginas;
-	}
-	
-	//Tombo
-	public int getTombo() {
-		return tombo;
-	}
-		
-	public void setTombo(int tombo) {
-		this.tombo = tombo;
-	}	
-
 }
