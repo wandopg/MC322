@@ -1,9 +1,9 @@
 package ferramentas;
-import materiais.ItemMultimidia;
+import materiais.ItenMultimidia;
 
 public class Emprestimo {
 	
-	private ItemMultimidia item;
+	private ItenMultimidia item;
 	private String dataemprestimo;
 	private String datadevolucao;
 	
@@ -14,11 +14,11 @@ public class Emprestimo {
 
 	}
 
-	public ItemMultimidia getItem() {
+	public ItenMultimidia getItem() {
 		return item;
 	}
 
-	public void setItem(ItemMultimidia item) {
+	public void setItem(ItenMultimidia item) {
 		this.item = item;
 	}
 

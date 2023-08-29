@@ -4,7 +4,7 @@ import materiais.LivroEletronico;
 import materiais.Cd;
 import materiais.Dvd;
 import usuarios.Funcionarios;
-import usuarios.Estudantes;
+import usuarios.EstudantesGraduacao;
 
 
 /* LAB3
@@ -20,7 +20,7 @@ public class Main {
 		LivroFisico livrofisico1 = new LivroFisico("Dom Quixote", "Miguel de Cervantes", 250, 1);
 		LivroEletronico livroeletronico1 = new LivroEletronico("Dom Quixote", "Miguel de Cervantes", 250, "www.livro1.com.br");
 		Funcionarios funcionario1 = new Funcionarios("Joao Silva", "Bibliotecario", 001, "123.456.789-12");
-		Estudantes estudante1 = new Estudantes("Joao Silva", 123456, "123.456.789-12");
+		EstudantesGraduacao estudante1 = new EstudantesGraduacao("Joao Silva", 123456, "123.456.789-12");
 		Cd cd1 = new Cd("Dom Quixote - Audiolivro", "Miguel de Cervantes", 15, 120);
 		Dvd dvd1 = new Dvd("Dom Quixote", "Miguel de Cervantes", 133);
 		

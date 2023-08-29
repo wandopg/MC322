@@ -1,12 +1,12 @@
 package usuarios;
 
-public class Estudantes extends Membro {
+public class EstudantesGraduacao extends Membro {
 
 	private int ra;
 
 	// Metodo construtor
 
-	public Estudantes(String nome, int ra, String cpf) {
+	public EstudantesGraduacao(String nome, int ra, String cpf) {
 
 		super (nome, cpf);
 		this.ra = ra;
