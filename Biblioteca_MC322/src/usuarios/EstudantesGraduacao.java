@@ -1,37 +1,22 @@
 package usuarios;
 
+import ferramentas.Emprestimo;
+
 public class EstudantesGraduacao extends Membro {
 
-	private int ra;
 
-	// Metodo construtor
+	protected int maxEmprestimos = 5;
 
-	public EstudantesGraduacao(String nome, int ra, String cpf) {
-
-		super (nome, cpf);
-		this.ra = ra;
-		
-
+	public EstudantesGraduacao(String nome, String identificação, String endereco, String registro, Emprestimo[] emprestimos,
+			int maxEmprestimos) {
+		super(nome, identificação, endereco, registro, emprestimos);
+		this.maxEmprestimos = maxEmprestimos;
 	}
 
-	// Outros metodos
-
-	public String toString() {
-		String out = "Nome: " + getNome() + "\n";
-		out = out + "Ra = " + getRa() + "\n";
-		out = out + "CPF = " + getCpf() + "\n";
-		return out;
-	}
-
-	// Metodos Get and Set
-
-	// Ra
-	public int getRa() {
-		return ra;
-	}
-
-	public void setRa(int ra) {
-		this.ra = ra;
-	}
-
+	
+	
+	
+	
+	
+	
 }

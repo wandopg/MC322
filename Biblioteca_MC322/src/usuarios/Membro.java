@@ -10,41 +10,37 @@ public class Membro {
 
 
 	protected String nome;
-	protected String cpf;
+	protected String identificação ;
+	private String endereco;
+	private String registro;
+	private int maxEmprestimos;  
 	private Emprestimo[] emprestimos;
-	private int numEmprestimos;
 
 
 	// Metodo construtor
 
-	public Membro(String nome, String cpf) {
-
-		emprestimos = new Emprestimo[4]; // um membro pode ter até 4 emprestimos de uma vez
-		numEmprestimos = 0;
-		this.nome = nome;
-		this.cpf = cpf;
-	}
 	
+	
+	public Membro(String nome, String identificação, String endereco, String registro,
+			Emprestimo[] emprestimos) {
+		super();
+		this.nome = nome;
+		this.identificação = identificação;
+		this.endereco = endereco;
+		this.registro = registro;
+		this.emprestimos = emprestimos;
+	}
+
 	public void addImprestimo(Emprestimo emprestimo) {
-		if (numEmprestimos < emprestimos.length) {
-			emprestimos[numEmprestimos] = emprestimo;
-			numEmprestimos++;
+		if (emprestimos.length < maxEmprestimos ) {
+			emprestimos[( emprestimos.length + 1 )] = emprestimo;
 		}
 	}
-	
-	
-	
-	// Outros metodos
 
-	public String toString() {
-		String out = "Nome: " + getNome() + "\n";
-		out = out + "CPF = " + getCpf() + "\n";
-		return out;
-	}
-
+	
+	
 	// Metodos Get and Set
-
-	// Nome
+	
 	public String getNome() {
 		return nome;
 	}
@@ -53,13 +49,36 @@ public class Membro {
 		this.nome = nome;
 	}
 
-	// CPF
-	public String getCpf() {
-		return cpf;
+	public String getIdentificação() {
+		return identificação;
 	}
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setIdentificação(String identificação) {
+		this.identificação = identificação;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getRegistro() {
+		return registro;
+	}
+
+	public void setRegistro(String registro) {
+		this.registro = registro;
+	}
+
+	public int getMaxEmprestimos() {
+		return maxEmprestimos;
+	}
+
+	public void setMaxEmprestimos(int numEmprestimos) {
+		this.maxEmprestimos = numEmprestimos;
 	}
 
 	public Emprestimo[] getEmprestimos() {
@@ -69,6 +88,9 @@ public class Membro {
 	public void setEmprestimos(Emprestimo[] emprestimos) {
 		this.emprestimos = emprestimos;
 	}
+	
+	
+	
 
 	
 	
