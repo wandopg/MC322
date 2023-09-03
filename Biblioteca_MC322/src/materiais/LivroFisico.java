@@ -97,12 +97,12 @@ public class LivroFisico extends ItenMultimidia {
 		out = out + "Ano de publicacao = " + getAnoPubli() +"\n";
 		out = out + "Genero = " + getGenero() +"\n";
 		out = out + "Sinopse = " + getSinopse() +"\n";
-		out = out + "Isbn = " + getIsbn() +"\n";
-		out = out + "Isbn = " + getEdicao() +"\n";
-		out = out + "Isbn = " + getCopias() +"\n";
-		out = out + "Isbn = " + getCopiasDisponiveis() +"\n";
-		out = out + "Isbn = " + getLocalizacao() +"\n";
-		out = out + "Isbn = " + getEstado() +"\n";
+		out = out + "ISBN = " + getIsbn() +"\n";
+		out = out + "Edicao = " + getEdicao() +"\n";
+		out = out + "Copias por edicao = " + getCopias() +"\n";
+		out = out + "Copias disponiveis = " + getCopiasDisponiveis() +"\n";
+		out = out + "Localisacao na biblioteca = " + getLocalizacao() +"\n";
+		out = out + "Estado de Conservacao = " + getEstado() +"\n";
 		
 		return out;
 	}

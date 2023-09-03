@@ -33,11 +33,11 @@ public class LivroEletronico extends ItenMultimidia {
 		out = out + "Genero = " + getGenero() +"\n";
 		out = out + "Sinopse = " + getSinopse() +"\n";
 		out = out + "Formato = " + getFormato() +"\n";
-		out = out + "Licencas = " + getLicencas() +"\n";
+		out = out + "Numero total de licencas = " + getLicencas() +"\n";
 		out = out + "Formato de Arquivos = " + getFormatoArq() +"\n";
 		out = out + "URL = " + getUrl() +"\n";
-		out = out + "Requisitos = " + getRequisitos() +"\n";
-		out = out + "Data = " + getData() +"\n";
+		out = out + "Requisitos de leitura = " + getRequisitos() +"\n";
+		out = out + "Data de disponibilidade = " + getData() +"\n";
 		
 		return out;
 	}

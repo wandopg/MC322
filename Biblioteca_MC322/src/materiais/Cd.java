@@ -24,7 +24,19 @@ public class Cd extends ItenMultimidia {
 	// Outros metodos
 		
 	public String toString() {
-		String out = "Titulo = "+getTitulo()+"\n";
+		String out = "Titulo: "+getTitulo()+"\n";
+		out = out + "Autor = " + getAutorOuArtista() +"\n";
+		out = out + "Editor ou Gravadora = " + getEditoraOuGravdora() +"\n";
+		out = out + "Ano de publicacao = " + getAnoPubli() +"\n";
+		out = out + "Genero = " + getGenero() +"\n";
+		out = out + "Sinopse = " + getSinopse() +"\n";
+		out = out + "Sinopse = " + getFaixas() +"\n";
+		out = out + "Numero de copias = " + getDuracao() +"\n";
+		out = out + "Numero de copias disponiveis = " + getCopias() +"\n";
+		out = out + "Numeros de copias disponíveis = " + getCopiasDisp() +"\n";
+		out = out + "Estado de conservacao = " + getEstado() +"\n";
+
+		
 		return out;
 	}
 
