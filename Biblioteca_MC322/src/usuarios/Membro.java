@@ -1,10 +1,6 @@
 package usuarios;
 import ferramentas.Emprestimo;
 
-/* LAB1
-Wanderley Pedroso da Graca Barion RA: 225790
-Yuri Rocha Cunha RA: 250570
-*/
 
 public class Membro {
 
